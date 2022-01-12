@@ -2,7 +2,7 @@ import express from 'express';
 import morgan from 'morgan';
 import dotenv from 'dotenv';
 
-// dotenv.config();
+dotenv.config();
 
 const PORT = Number(process.env.PORT ?? 3080);
 
@@ -11,7 +11,7 @@ app.use(morgan('dev'));
 
 app.get('/', (req, res) => {
   res.json({
-    test: 'hello world',
+    test: 'hello claudiu',
   });
 });
 
